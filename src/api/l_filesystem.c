@@ -565,13 +565,22 @@ static int libLoaderCommon(lua_State* L, bool allInOneFlag) {
   }
   luaL_pushresult(&buffer);
 
-  lua_call(L, 2, 1);
+  lua_call(L, 2, 2);
 
 #ifdef __ANDROID__
   if (plugin) {
     dlclose(plugin);
   }
 #endif
+
+  if (lua_isfunction(L, -2)) {
+    lua_pop(L, 1);
+  } else {
+    lua_pushfstring(L, "\n\tfailed to load%s plugin: ", allInOneFlag ? " all-in-one" : "");
+    lua_replace(L, -3);
+    lua_concat(L, 2);
+  }
+
   return 1;
 }
 
