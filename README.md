@@ -1,4 +1,5 @@
-# 🚀 Not-LÖVR Approved
+# 🚀 Not-L-VR Approved
+_A fork of LÖVR, but with 100% less mod interference_ 
 
 For developers who want an engine without bad moderation.  
 Forked for the memes. Use at your own risk.  
