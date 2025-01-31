@@ -2,7 +2,12 @@
 _A fork of LÖVR, but with 100% less mod interference_ 
 
 For developers who want an engine without bad moderation.  
-Forked for the memes. Use at your own risk.  
+Forked for the memes. Use at your own risk.
+
+## Features  
+- No mods will delete your projects  
+- No unexplained censorship  
+- Open-source freedom at its finest  
 
 Original LÖVR License applies:  
 
